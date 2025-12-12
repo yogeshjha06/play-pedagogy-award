@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import { PageHeader } from "@/components/page-header"
 import { PageFooter } from "@/components/page-footer"
-import { MobileNav } from "@/components/mobile-nav"
+import { ChatWrapper } from "@/components/chat-wrapper"
 import { X, Play, ExternalLink } from "lucide-react"
 
 interface NewsItem {
@@ -144,7 +144,7 @@ export default function NewsPage() {
 
       {/* Glass Morphism Modal */}
       {selectedItem && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 backdrop-blur-md bg-black/30 overflow-hidden">
+        <div className="fixed inset-0 z-40 flex items-center justify-center p-4 backdrop-blur-md bg-black/30 overflow-hidden">
           <div className="relative w-full max-w-2xl bg-white/80 backdrop-blur-xl rounded-3xl shadow-2xl border border-white/20 max-h-[90vh] flex flex-col">
             <button
               onClick={() => setSelectedItem(null)}
@@ -209,7 +209,7 @@ export default function NewsPage() {
       `}</style>
 
       <PageFooter />
-      <MobileNav />
+      <ChatWrapper />
     </div>
   )
 }

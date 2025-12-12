@@ -17,6 +17,8 @@ const socialLinks = [
 ]
 
 export function Footer() {
+  const currentYear = new Date().getFullYear()
+
   return (
     <footer className="bg-[#1a237e] text-white rounded-t-[3rem] lg:rounded-t-[4rem] mt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
@@ -89,7 +91,12 @@ export function Footer() {
 
         {/* Bottom bar */}
         <div className="border-t border-white/20 mt-10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/60">
-          <p>© 2025 Play Scotland | website by</p>
+          <p>
+            © {currentYear} Play Scotland | Intelligence Partner:{" "}
+            <Link href="https://uszatki.co.uk/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#c5e063] transition-colors">
+              Uszatki Ltd
+            </Link>
+          </p>
           <div className="flex items-center gap-2">
             <Image src="/asset/footer-logo.png" alt="Footer Logo" width={180} height={90} className="h-20 w-auto" />
           </div>

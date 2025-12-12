@@ -7,7 +7,8 @@ import { FAQsTab } from "./tabs/faqs-tab"
 import { NewsTab } from "./tabs/news-tab"
 import { UsersTab } from "./tabs/users-tab"
 import { MessagesTab } from "./tabs/messages-tab"
-import { ClipboardList, HelpCircle, Newspaper, Users, MessageSquare, LogOut, User } from "lucide-react"
+import { GargiTab } from "./tabs/gargi-tab"
+import { ClipboardList, HelpCircle, Newspaper, Users, MessageSquare, LogOut, User, MessageCircle } from "lucide-react"
 import Image from "next/image"
 
 interface AdminDashboardProps {
@@ -24,6 +25,7 @@ export function AdminDashboard({ adminId, onLogout }: AdminDashboardProps) {
     { id: "news", label: "News & Podcasts", icon: Newspaper },
     { id: "users", label: "User Logins", icon: Users },
     { id: "messages", label: "Messages", icon: MessageSquare },
+    { id: "gargi", label: "Gargi AI", icon: MessageCircle },
   ]
 
   return (
@@ -77,12 +79,13 @@ export function AdminDashboard({ adminId, onLogout }: AdminDashboardProps) {
 
       {/* Main Content */}
       <div className="flex-1 overflow-auto">
-        <div className="p-8">
+        <div className="p-8 h-full">
           {activeTab === "registrations" && <RegistrationsTab />}
           {activeTab === "faqs" && <FAQsTab />}
           {activeTab === "news" && <NewsTab />}
           {activeTab === "users" && <UsersTab />}
           {activeTab === "messages" && <MessagesTab />}
+          {activeTab === "gargi" && <GargiTab />}
         </div>
       </div>
     </div>

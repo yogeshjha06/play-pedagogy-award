@@ -8,7 +8,7 @@ import { ForYourSchoolSection } from "@/components/for-your-school-section"
 import { NewsPodcastsSection } from "@/components/news-podcasts-section"
 import { FaqSection } from "@/components/faq-section"
 import { Footer } from "@/components/footer"
-import { MobileNav } from "@/components/mobile-nav"
+import { ChatWrapper } from "@/components/chat-wrapper"
 
 export default function Home() {
   return (
@@ -23,7 +23,7 @@ export default function Home() {
       <NewsPodcastsSection />
       <FaqSection />
       <Footer />
-      <MobileNav />
+      <ChatWrapper />
     </main>
   )
 }

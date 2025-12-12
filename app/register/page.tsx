@@ -1,7 +1,7 @@
 import { PageHeader } from "@/components/page-header"
 import { RegisterForm } from "@/components/register-form"
 import { PageFooter } from "@/components/page-footer"
-import { MobileNav } from "@/components/mobile-nav"
+import { ChatWrapper } from "@/components/chat-wrapper"
 
 export default function RegisterPage() {
   return (
@@ -23,7 +23,7 @@ export default function RegisterPage() {
       </section>
 
       <PageFooter />
-      <MobileNav />
+      <ChatWrapper />
     </main>
   )
 }

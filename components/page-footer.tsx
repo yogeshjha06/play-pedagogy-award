@@ -89,7 +89,7 @@ export function PageFooter() {
 
         {/* Bottom bar */}
         <div className="border-t border-white/20 mt-10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/60">
-          <p>© 2025 Play Scotland | website by</p>
+          <p>© 2025 Play Scotland | Intelligence Partner: <Link href="https://uszatki.co.uk/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Uszatki Ltd</Link></p>
           <div className="flex items-center gap-2">
             <Image src="/asset/footer-logo.png" alt="Footer Logo" width={180} height={90} className="h-20 w-auto" />
           </div>

@@ -1,6 +1,6 @@
 import { PageHeader } from "@/components/page-header"
 import { PageFooter } from "@/components/page-footer"
-import { MobileNav } from "@/components/mobile-nav"
+import { ChatWrapper } from "@/components/chat-wrapper"
 import { Button } from "@/components/ui/button"
 import { ChevronLeft } from "lucide-react"
 import Link from "next/link"
@@ -33,7 +33,7 @@ export default function ComingSoonPage() {
       </section>
 
       <PageFooter />
-      <MobileNav />
+      <ChatWrapper />
     </main>
   )
 }
